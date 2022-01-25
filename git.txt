@@ -3,5 +3,5 @@ git status
 git add . 
 git commit
 
-git config --global user.email "bernardoh.landerl@gmail.com"
-  git config --global user.name "BernardoLander"
+git config --global user.email "_______@gmail.com"
+  git config --global user.name "_____"
