@@ -1,7 +1,0 @@
-git remote add origin http de github
-git status
-git add . 
-git commit
-
-git config --global user.email "bernardoh.landerl@gmail.com"
-  git config --global user.name "BernardoLander"
