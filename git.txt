@@ -3,5 +3,146 @@ git status
 git add . 
 git commit
 
-git config --global user.email "bernardoh.landerl@gmail.com"
-  git config --global user.name "BernardoLander"
+git config --global user.email ""
+  git config --global user.name ""
+
+
+Microsoft Windows [Version 10.0.19042.1466]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\berna\Desktop\Ej AyP>git init
+Initialized empty Git repository in C:/Users/berna/Desktop/Ej AyP/.git/
+
+C:\Users\berna\Desktop\Ej AyP>-m "first commit
+'-m' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\berna\Desktop\Ej AyP>-m "first commit"
+'-m' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\berna\Desktop\Ej AyP>git commit-m "first commit"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+C:\Users\berna\Desktop\Ej AyP>git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Clases/
+        Prepas/
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\berna\Desktop\Ej AyP>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\berna\Desktop\Ej AyP>fit branch -M main
+'fit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\berna\Desktop\Ej AyP>git branch -M main
+
+C:\Users\berna\Desktop\Ej AyP>git remota add origin https://github.com/BernardoLander/AlgYProg.git
+git: 'remota' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+C:\Users\berna\Desktop\Ej AyP>git remote add origin https://github.com/BernardoLander/AlgYProg.git
+
+C:\Users\berna\Desktop\Ej AyP>pit push -u origin main
+'pit' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\berna\Desktop\Ej AyP>git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/BernardoLander/AlgYProg.git'
+
+C:\Users\berna\Desktop\Ej AyP>git commit.
+git: 'commit.' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+C:\Users\berna\Desktop\Ej AyP>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Clases/
+        Prepas/
+        git.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\berna\Desktop\Ej AyP>git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+C:\Users\berna\Desktop\Ej AyP>git add .
+
+C:\Users\berna\Desktop\Ej AyP>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Clases/clase1/ejercicio1.py
+        new file:   Clases/clase1/ejercicio2.py
+        new file:   Clases/clase1/ejercicio3.py
+        new file:   Clases/clase2/calculatorEj.py
+        new file:   Clases/clase2/ejenclase.py
+        new file:   Prepas/prepa1.py
+        new file:   git.txt
+
+
+C:\Users\berna\Desktop\Ej AyP>git commit "first commit"
+error: pathspec 'first commit' did not match any file(s) known to git
+
+C:\Users\berna\Desktop\Ej AyP>git commit -m "first commit"
+[main (root-commit) 9aa09a0] first commit
+ 7 files changed, 138 insertions(+)
+ create mode 100644 Clases/clase1/ejercicio1.py
+ create mode 100644 Clases/clase1/ejercicio2.py
+ create mode 100644 Clases/clase1/ejercicio3.py
+ create mode 100644 Clases/clase2/calculatorEj.py
+ create mode 100644 Clases/clase2/ejenclase.py
+ create mode 100644 Prepas/prepa1.py
+ create mode 100644 git.txt
+
+C:\Users\berna\Desktop\Ej AyP>git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+
+C:\Users\berna\Desktop\Ej AyP>git push --set-upstream origin main
+info: please complete authentication in your browser...
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (13/13), 2.30 KiB | 589.00 KiB/s, done.
+Total 13 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/BernardoLander/AlgYProg.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+C:\Users\berna\Desktop\Ej AyP>code . (para abrir VS code desde una carpeta)
+
