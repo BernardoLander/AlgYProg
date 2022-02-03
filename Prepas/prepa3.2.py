@@ -17,4 +17,5 @@ if numb.isnumeric():
             a[x].pop(y)
             a[x].insert(y,h)
 
-print (a)
+for i in range(len(a)):
+    print(a[i])
