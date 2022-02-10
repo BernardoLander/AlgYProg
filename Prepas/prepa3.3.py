@@ -9,7 +9,7 @@ while True:
                             3. Para mostrar la base de datos
                             4. Para editar a un estudiante ya existente
                             5. Para salir''')
-        if option.isnumeric() and 1 <= option < 4:
+        if option.isnumeric() and 1 <= option < 5:
             
             option = int(option)
             break
@@ -75,17 +75,17 @@ while True:
 
     elif option == 2:
 
-          for key, value in bd.items():
+            for key, value in bd.items():
         
-            print(f'''\nCedula: {key}\n Nombre: {value["name"]}\n Apellido: {value["lastName"]}\n''')
+                print(f'''\nCedula: {key}\n Nombre: {value["name"]}\n Apellido: {value["lastName"]}\n''')
 
-            print("Materias")
-            for materia in value["assignments"]:
+                print("Materias")
+                for materia in value["assignments"]:
 
-                print(materia)
+                    print(materia)
 
-         dni = input("Ingresa la cedula del estudiante que deseas eliminar")
-         bd.pop(dni)
+            dni = input("Ingresa la cedula del estudiante que deseas eliminar")
+            bd.pop(dni)
             
 
     
@@ -112,5 +112,11 @@ while True:
             for materia in value["assignments"]:
 
                 print(materia)
-        dni = input("Ingresa la cedula del estudiante que deseas eliminar")
-        bd.pop(dni)
+        dni = input("Ingresa la cedula del estudiante que deseas cambiar")
+
+        #incompleto
+
+    else:
+
+        print("HASTA LUEGO")
+        break
