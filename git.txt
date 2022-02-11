@@ -146,3 +146,5 @@ Branch 'main' set up to track remote branch 'main' from 'origin'.
 
 C:\Users\berna\Desktop\Ej AyP>code . (para abrir VS code desde una carpeta)
 
+git config --global user.email "_______@gmail.com"
+  git config --global user.name "_____"
