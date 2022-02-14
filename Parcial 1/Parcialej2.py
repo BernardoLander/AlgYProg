@@ -17,19 +17,24 @@ onoff = True
 
 print ("****BIENVENIDO AL SISTEMA DE SAMAN EXPRESS****")
 while onoff:
-    option = input("Presione 1. para realizar una compra. 2. Para cerrar el dia 3. Para cerrar el programa")
+    option = input("Presione 1. para realizar una compra. 2. Para cerrar el dia 3. Para cerrar el programa\n===>")
 
     if option.isnumeric:
+        #no casteaste a int option dando error siempre
+        option = int(option)
+
         if option == 1:
             print ("Bienvenido a la seccion de compra de pasaje")
             while True:
-                dni = input("Por favor ingrese su cedula sin puntos ni comas")
-                num_pasajeros = input("Por favor ingrese la cantidad de pasajes que va a comprar para su destino")
-                gowhere = input("Por favor ingrese el codigo de su ciudad destino:\n V para Valencia P para pto La Cruz y B para Barquisimeto")
+                #no hay \n en ningun input
+                dni = input("Por favor ingrese su cedula sin puntos ni comas\n===>")
+                num_pasajeros = input("Por favor ingrese la cantidad de pasajes que va a comprar para su destino\n===>")
+                gowhere = input("Por favor ingrese el codigo de su ciudad destino:\n V para Valencia P para pto La Cruz y B para Barquisimeto\n===>")
 
                 if dni.isnumeric and num_pasajeros.isnumeric:
                     num_pasajeros = int(num_pasajeros)
-                    if num_pasajeros > 11:
+                    #mal colocado el >
+                    if num_pasajeros < 11:
                         gowhere = gowhere.capitalize()
                         if gowhere == "V" or gowhere == "P" or gowhere == "B":
                             break
@@ -39,23 +44,27 @@ while onoff:
                         print("Cantidad de pasajeros invalida")
                 else:
                     print("Ingreso invalido por favor intente de nuevo")
-            
-            if destinos[gowhere]["cupos"] >= num_pasajeros:
+
+            #"cupos" no existe en el diccionario es "Cupos"
+            if destinos[gowhere]["Cupos"] >= num_pasajeros:
                 print (f"Cedula: {dni}")
+
                 print (f"Cantidad de pasajeros: {num_pasajeros}")
+            #Falto imprimir el codigo de destino
                 print (f'''Destino: {destinos[gowhere]["nombre"]}''')
-                print (f'''Monto Bruto a pagar: {destinos[gowhere]["Valor"]}''')
+
+                print (f'''Monto Bruto a pagar: {destinos[gowhere]["Valor"] * num_pasajeros}''')
                 if num_pasajeros >= 4:
-                    print (f'''Monto de descuento: {destinos[gowhere]["Valor"] * 0.2}''')
-                    descuento = destinos[gowhere]["Valor"] * 0.2
+                    print (f'''Monto de descuento: {num_pasajeros*destinos[gowhere]["Valor"] * 0.2}''')
+                    descuento = num_pasajeros*destinos[gowhere]["Valor"] * 0.2
                 else:
                      print (f'''Monto de descuento: {0}''')
                      descuento = 0
 
-                print (f'''Monto de IVA: {destinos[gowhere]["Valor"] - descuento * 0.16}''')
-                IVA = destinos[gowhere]["Valor"] - descuento * 0.16
+                print (f'''Monto de IVA: {num_pasajeros * destinos[gowhere]["Valor"] - descuento * 0.16}''')
+                IVA = num_pasajeros * destinos[gowhere]["Valor"] - descuento * 0.16
 
-                print (f'''Monto a pagar: {destinos[gowhere]["Valor"] - descuento + IVA}''')
+                print (f'''Monto a pagar: {num_pasajeros * destinos[gowhere]["Valor"] - descuento + IVA}''')
 
                 destinos[gowhere]["Cupos"] = destinos[gowhere]["Cupos"] - num_pasajeros
             
@@ -71,15 +80,13 @@ while onoff:
             # El Monto Total Neto Facturado por Expresos Saman
             # Los datos del cliente que más dinero pagó
         
-        elif option == 0:
 
             onoff = False
-        
         else:
 
-            print ("Ingreso invalido por favor intente de nuevo")
+            print (" invalido por favor intente de nuevo")
     
 
 
     else:
-        print ("Ingreso invalido por favor intente de nuevo")
+        print ("2Ingreso invalido por favor intente de nuevo")
