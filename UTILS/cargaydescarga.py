@@ -1,6 +1,6 @@
 import pickle
 import os
-from unicodedata import name
+
 
 def recibir_datos_del_txt(nombre_txt,datos):
     
