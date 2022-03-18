@@ -1,5 +1,5 @@
 #Escriba una función llamada leer_tiempo()
-# La función debe tomar un argumento, un número entero y devolver un string que indique cuántas semanas y días son.
+#La función debe tomar un argumento, un número entero y devolver un string que indique cuántas semanas y días son.
 
 
 def leer_tiempo(days):
